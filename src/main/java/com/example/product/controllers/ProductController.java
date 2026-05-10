@@ -16,7 +16,7 @@ public class ProductController {
     @GetMapping("/prod")
     public ResponseEntity<ApiResponse<List<ProductDTO>>> getAllProducts() {
         List<ProductDTO> products = List.of(
-            new ProductDTO("Product 1", "Description 1", 10.0),
+            new ProductDTO("Product 1", "Description  1", 10.0),
             new ProductDTO("Product 2", "Description 2", 20.0)
         );
         ApiResponse<List<ProductDTO>> response = new ApiResponse<>(true, "Products retrieved successfully", products);
